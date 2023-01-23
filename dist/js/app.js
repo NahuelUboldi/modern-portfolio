@@ -38,3 +38,8 @@ const toggleMenu = () => {
 
 // listeners
 menuBtn.addEventListener('click', toggleMenu);
+
+//date
+const footerInfo = document.querySelector('#main-footer');
+const date = new Date();
+footerInfo.innerHTML = `Copyright &copy; ${date.getFullYear()} | Created by <a href="https://nahueluboldi.com/" target="_blank">Nahuel Uboldi</a>`;

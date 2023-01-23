@@ -1,5 +1,5 @@
 @use 'config' as *;
-@use "menu" as *;
+@use 'menu' as *;
 
 //estilos
 * {
@@ -12,7 +12,7 @@ body {
   //background-color: $primary-color;
   color: set-text-color($primary-color);
   height: 100%;
-  font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
 }
 h1,
@@ -135,13 +135,15 @@ main {
 // work Projects
 .projects {
   display: grid;
-  grid-gap: 1.5rem;
-  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.5rem;
+  grid-template-columns: repeat(4, 1fr);
   img {
     width: 100%;
-    border: 3px $white solid;
+    // border: 3px $white solid;
+    opacity: 0.5;
+
     &:hover {
-      opacity: 0.5;
+      opacity: 1;
       border-color: $secondary-color;
       @include easeOut;
     }
@@ -163,7 +165,7 @@ main {
     @include easeOut;
 
     &:hover {
-      padding: 0.5rem 1.5rem;
+      // padding: 0.5rem 1.5rem;
       background: $secondary-color;
       color: set-text-color($secondary-color);
 
